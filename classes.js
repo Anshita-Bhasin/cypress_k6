@@ -98,12 +98,3 @@ carobj3.showDetails()
 
 
 
-
-
-
-// recap - 
-
-// Classes 
-// Constructor 
-// Object 
-// this 
