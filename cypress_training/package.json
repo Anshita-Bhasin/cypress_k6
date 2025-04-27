@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e:test":"npx cypress run",
+    "test-chrome":"npx cypress run --browser chrome",
+    "dropdowntest":"npx cypress run --browser chrome --spec 'cypress/e2e/1-getting-started/dropdown_test.cy.js'"
   },
   "author": "Anshita Bhasin",
   "license": "ISC",
