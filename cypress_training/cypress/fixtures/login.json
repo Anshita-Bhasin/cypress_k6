@@ -1,0 +1,11 @@
+{
+   "testdata1": {
+        "username":"standard_user",
+        "password":"secret_sauce"
+    },
+
+ "testdata2": {
+        "username":"locked_out_user",
+        "password":"secret_sauce"
+    }
+}
