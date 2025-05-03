@@ -25,4 +25,16 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
-import 'cypress-file-upload';
+
+
+// Inside cypress/support/commands.js
+
+Cypress.Commands.add('login', (email, password) => {
+    cy.visit('https://www.saucedemo.com/v1/')
+    cy.get('#user-name').type(email)
+    cy.get('#password').type(password)
+    cy.get('#login-button').click()
+
+
+
+})

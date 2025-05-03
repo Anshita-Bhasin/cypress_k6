@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Using Fixtures', () => {
     let value
     beforeEach(function () {
@@ -5,6 +7,7 @@ describe('Using Fixtures', () => {
         cy.fixture('login').then((data) => {
             value = data
         })
+        //cy.ge
     })
 
 
@@ -33,3 +36,24 @@ describe('Using Fixtures', () => {
         //})
     })
 })
+
+// API 
+// endpoint -> 
+// request / payload -> 
+// method -> GET, POST, PUT , PATCH, DELETE ( 204) -> 
+// HTTP Codes -> 
+// 1xx, 2xx, 3xx, 4xx, 5xx
+// 1xx -> Informational 
+// 2xx  => Success, 200- ok , 201 - Created, 204 - Success and no content in response
+
+// Employee -> username, age,dept => id 
+// 3xx - Redirection , 301 - Moved Permanently, 302- URL is temp moved
+
+//4xx => Client Errors, 400 - Bad Request , 401 - unauthorized, 403 - forbidden
+// 404 - Not Found , 409 - Conflict, 429 - Too Many Request
+
+
+//5xx => Server Error , 500 - Internal Server Error , 502 - Bad Gateway, 
+// 503 - Service Unavailable
+
+
