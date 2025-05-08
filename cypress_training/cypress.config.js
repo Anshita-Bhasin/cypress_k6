@@ -6,6 +6,7 @@ module.exports = defineConfig({
   // viewportWidth: 850,
   e2e: {
     experimentalStudio: true,
+    baseUrl: 'https://jsonplaceholder.typicode.com'
 
   },
 });
