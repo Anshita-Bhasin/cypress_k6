@@ -34,7 +34,16 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get('#user-name').type(email)
     cy.get('#password').type(password)
     cy.get('#login-button').click()
+})
 
+// npm install xlsx --save
 
+const XLSX = require('xlsx')
 
+Cypress.Commands.add('readExcelFile', (filepath) => {
+    return cy.task('readExcelFile', filepath)
+})
+
+Cypress.Commands.add('writeToExcel', (data, filepath) => {
+    return cy.task('writeToExcel', { data, filepath })
 })
