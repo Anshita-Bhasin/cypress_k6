@@ -17,6 +17,7 @@
 import './commands'
 
 
+
 // Hide fetch/XHR requests
 const app = window.top;
 if (!app.document.head.querySelector('[data-hide-command-log-request]')) {

@@ -9,7 +9,12 @@ describe('Using Fixtures', () => {
         })
         //cy.ge
     })
+/*
+given i am on login page
+when i enter ***
+Then it should return ***
 
+*/
 
     it.only('TC1 - Passsing data from fixtures', () => {
 
@@ -28,8 +33,8 @@ describe('Using Fixtures', () => {
         cy.visit('https://www.saucedemo.com/v1/')
 
         //cy.fixture('login').then((data) => {
-        cy.get('#user-name').type(this.data.testdata2.username)
-        cy.get('#password').type(this.data.testdata2.password)
+        // cy.get('#user-name').type(this.data.testdata2.username)
+        // cy.get('#password').type(this.data.testdata2.password)
         cy.get('#login-button').click()
         cy.get('.error-button').should('be.visible')
 

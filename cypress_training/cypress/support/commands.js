@@ -47,3 +47,10 @@ Cypress.Commands.add('readExcelFile', (filepath) => {
 Cypress.Commands.add('writeToExcel', (data, filepath) => {
     return cy.task('writeToExcel', { data, filepath })
 })
+
+Cypress.Commands.add('getIframeBody',(selector)=>{
+    return cy.get(selector)
+        .its('0.contentDocument.body')
+        .should('not.be.empty')
+        .then(cy.wrap)
+})

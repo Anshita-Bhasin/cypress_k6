@@ -4,6 +4,7 @@ const XLSX = require('xlsx')
 
 module.exports = defineConfig({
   watchForFileChanges: false,
+  chromeWebSecurity: false,
   // viewportHeight: 660,
   // viewportWidth: 850,
   e2e: {
